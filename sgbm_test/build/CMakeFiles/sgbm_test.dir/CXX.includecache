@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/relaybot/Desktop/stereo_study/sgbm_test/sgbm_test.cc
+iostream
+-
+opencv2/opencv.hpp
+-
+

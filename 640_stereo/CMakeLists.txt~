@@ -1,0 +1,36 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(teststereo)
+
+#include_directories( "/usr/include/eigen3/" )
+
+find_package( OpenCV REQUIRED)
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+
+find_package( PCL REQUIRED COMPONENT common io )
+include_directories( ${PCL_INCLUDE_DIRS} )
+add_definitions( ${PCL_DEFINITIONS} )
+
+add_executable( stereo stereo.cc)
+add_executable(savepic test.cpp)
+add_executable( test11 test1.cpp)
+add_executable( yaml_test yaml_test.cpp)
+add_executable( sgbm_test sgbmtest.cpp)
+#add_executable( cloud_test cloudtest.cpp)
+
+target_link_libraries( savepic ${OpenCV_LIBS})
+target_link_libraries( stereo ${OpenCV_LIBS})
+target_link_libraries( test11 ${OpenCV_LIBS})
+target_link_libraries( yaml_test ${OpenCV_LIBS})
+target_link_libraries( sgbm_test ${OpenCV_LIBS})
+
+#target_link_libraries( cloud_test ${OpenCV_LIBS} ${PCL_LIBRARIES})
+
+
+
+
+
+
+
+
+
+

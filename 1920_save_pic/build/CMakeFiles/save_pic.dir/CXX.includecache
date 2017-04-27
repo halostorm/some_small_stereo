@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/relaybot/Desktop/stereo_study/1920_save_pic/save_pic.cc
+iostream
+-
+opencv2/opencv.hpp
+-
+cstdio
+-
+
