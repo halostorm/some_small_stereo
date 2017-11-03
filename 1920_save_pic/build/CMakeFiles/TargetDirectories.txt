@@ -1,1 +1,0 @@
-/home/relaybot/Desktop/stereo_study/1920_save_pic/build/CMakeFiles/save_pic.dir
